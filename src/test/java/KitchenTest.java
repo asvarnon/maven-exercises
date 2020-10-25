@@ -1,6 +1,6 @@
 import junit.framework.TestCase;
 import org.junit.*;
-import static org.junit.Assert.*;
+
 
 
 public class KitchenTest extends TestCase {
