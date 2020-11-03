@@ -1,6 +1,8 @@
 public class Device {
     private String name;
 
+
+    //constructors
     public Device(){
         //default constructor
     }
