@@ -69,8 +69,9 @@ public class MyFirstTest {
 
         assertTrue(learningTDD);
         assertTrue("5 is greater than 4", 5 > 4);
+        assertTrue("4 is greater than 3", 3 < 4);
         assertFalse("5 is not greater than 6", 5 > 6);
-        assertFalse("5 is not greater than 6", 5 > 5);
+        assertFalse("5 is not greater than 5", 5 > 5);
     }
 
     @Test
