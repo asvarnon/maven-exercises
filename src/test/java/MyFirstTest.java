@@ -62,17 +62,6 @@ public class MyFirstTest {
         assertFalse(Arrays.equals(numbers, reverseNumbers));
     }
 
-    @Test
-    public void testIfGreaterOrLesserThanWorks() {
-
-        boolean learningTDD = true;
-
-        assertTrue(learningTDD);
-        assertTrue("5 is greater than 4", 5 > 4);
-        assertTrue("4 is greater than 3", 3 < 4);
-        assertFalse("5 is not greater than 6", 5 > 6);
-        assertFalse("5 is not greater than 5", 5 > 5);
-    }
 
     @Test
     public void testIfInstanceIsNull() {
@@ -89,11 +78,15 @@ public class MyFirstTest {
     }
 
     @Test
-    public void testIfArraySame() {
-        List<String> languages = new ArrayList<>();
-        List<String> moreLanguages = new ArrayList<>();
+    public void testIfGreaterOrLesserThanWorks() {
 
-        assertNotSame(languages, moreLanguages);
+        boolean learningTDD = true;
+
+        assertTrue(learningTDD);
+        assertTrue("5 is greater than 4", 5 > 4);
+        assertTrue("4 is greater than 3", 3 < 4);
+        assertFalse("5 is not greater than 6", 5 > 6);
+        assertFalse("5 is not greater than 5", 5 > 5);
     }
 
     @Test
@@ -102,6 +95,14 @@ public class MyFirstTest {
 
         assertTrue("Languages contains this letter",language.contains("H"));
         assertFalse("Language does not contain this letter",language.contains("J"));
+    }
+
+    @Test
+    public void testIfArraySame() {
+        List<String> languages = new ArrayList<>();
+        List<String> moreLanguages = new ArrayList<>();
+
+        assertNotSame(languages, moreLanguages);
     }
 
 }
