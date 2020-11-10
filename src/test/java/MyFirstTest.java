@@ -97,12 +97,19 @@ public class MyFirstTest {
         assertFalse("Language does not contain this letter",language.contains("J"));
     }
 
-    @Test
-    public void testIfArraySame() {
-        List<String> languages = new ArrayList<>();
-        List<String> moreLanguages = new ArrayList<>();
+//    @Test
+//    public void testIfArraySame() {
+//        List<String> languages = new ArrayList<>();
+//        List<String> moreLanguages = new ArrayList<>();
+//
+//        assertNotSame(languages, moreLanguages);
+//    }
+@Test
+public void testIfArraySame() {
+    List<String> languages = new ArrayList<>();
+    List<String> moreLanguages = new ArrayList<>();
 
-        assertNotSame(languages, moreLanguages);
-    }
+    assertNotSame(languages, moreLanguages);
+}
 
 }
